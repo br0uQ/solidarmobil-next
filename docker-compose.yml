@@ -1,0 +1,19 @@
+version: "3"
+services:
+  solidarmobil-web:
+    image: solidarmobil-web:latest
+    restart: unless-stopped
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.solidarmobil-web.entrypoints=websecure"
+      - "traefik.http.routers.solidarmobil-web.rule=Host(`www.solidarmobil.de`)"
+      - "traefik.http.routers.solidarmobil-web.tls.certresolver=myresolver"
+      - "traefik.port=80"
+
+networks:
+  web:
+    external: true
