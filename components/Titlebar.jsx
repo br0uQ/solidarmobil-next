@@ -1,4 +1,4 @@
-import imgHero from "../public/img/hero.png";
+import imgHero from "../public/img/hero_smartphone_car.jpg";
 
 export default function Titlebar(props) {
   const defHeading = "Heading";
@@ -12,7 +12,7 @@ export default function Titlebar(props) {
         backgroundImage: `url(${imgHero.src})`,
       }}
     >
-      <div className="hero-overlay bg-opacity-50"></div>
+      <div className="hero-overlay bg-opacity-70"></div>
       <div className="hero-content text-center">
         <div className="text-5xl font-nothing">
           <h1>{props.heading || defHeading}</h1>
