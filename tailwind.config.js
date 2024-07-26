@@ -14,6 +14,8 @@ module.exports = {
         nothing: ["var(--font-nothing-you-could-do)"],
         caudex: ["var(--font-caudex)"],
         palanquin: ["var(--font-palanquin)"],
+        heading: ["var(--font-nothing-you-could-do)"],
+        subheading: ["var(--font-caudex)"],
       },
     },
   },

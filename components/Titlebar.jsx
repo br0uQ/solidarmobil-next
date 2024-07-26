@@ -7,16 +7,18 @@ export default function Titlebar(props) {
 
   return (
     <div
-      className="hero min-h-screen bg-primary text-primary-content mb-12"
+      className="hero min-h-screen mb-12"
       style={{
         backgroundImage: `url(${imgHero.src})`,
       }}
     >
       <div className="hero-overlay bg-opacity-70"></div>
-      <div className="hero-content text-center">
-        <div className="text-5xl font-nothing">
-          <h1>{props.heading || defHeading}</h1>
-          {/*<h2 className="mb-3">{props.subheading || defSubheading}</h2> */}
+      <div className="hero-content text-center text-neutral-content">
+        <div className="max-w-md">
+          <div className="text-5xl font-heading">
+            <h1>{props.heading || defHeading}</h1>
+            <p className="mb-5 font-subheading">{props.subheading || defSubheading}</p>
+          </div>
         </div>
       </div>
     </div>
