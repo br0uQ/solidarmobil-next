@@ -15,10 +15,12 @@ export default function Titlebar(props) {
       <div className="hero-overlay bg-opacity-70"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <div className="text-5xl font-heading">
-            <h1>{props.heading || defHeading}</h1>
-            <p className="mb-5 font-subheading">{props.subheading || defSubheading}</p>
-          </div>
+          <h1 className="mb-5 text-5xl font-heading">
+            {props.heading || defHeading}
+          </h1>
+          <p className="mb-5 font-subheading italic text-3xl">
+            {props.subheading || defSubheading}
+          </p>
         </div>
       </div>
     </div>

@@ -3,10 +3,13 @@ import Titlebar from "@/components/Titlebar";
 export default function Home() {
   return (
     <div>
-      <Titlebar heading="SolidarMobil e.V." subheading="" />
+      <Titlebar
+        heading="Gemeinsam mobil machen"
+        subheading="Der SolidarMobil e.V. macht Fahrzeug-Sharing im Raum Hersbruck und Umgebung möglich."
+      />
 
       <div className="page-content">
-        <h1 className="font-caudex italic">SolidarMobil e.V.</h1>
+        <h1 className="">SolidarMobil e.V.</h1>
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
