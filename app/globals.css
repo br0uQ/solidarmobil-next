@@ -13,7 +13,7 @@
 
 @layer components {
   .page-content {
-    @apply container max-w-screen-xl my-12 mx-auto p-8 bg-secondary text-secondary-content text-lg rounded-md;
+    @apply container max-w-screen-xl my-12 mx-auto p-8 bg-secondary text-secondary-content text-lg lg:rounded-md ;
   }
 
   .menu {
