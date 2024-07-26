@@ -2,7 +2,7 @@ import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import NavbarItems from "./NavbarItems";
 
-export default function Header() {
+export default function Navbar() {
   return (
     <div className="navbar bg-base-100 text-base-content z-10 fixed top-0 w-full">
       <div className="navbar-start">

@@ -1,6 +1,6 @@
 import { Caudex, Nothing_You_Could_Do, Palanquin } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header.jsx";
+import Navbar from "../components/Navbar";
 
 const nothing_you_could_do = Nothing_You_Could_Do({
 	weight: "400",
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 			<body
 				className={`${nothing_you_could_do.variable} ${caudex.variable} ${palanquin.variable}`}
 			>
-				<Header />
+				<Navbar />
 				<main className="bg-base-100 min-h-screen w-full text-base-content">
 					{children}
 				</main>
