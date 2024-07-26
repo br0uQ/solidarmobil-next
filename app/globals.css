@@ -4,12 +4,20 @@
 
 @layer base {
   html {
-    font-family: "Palanquin", system-ui, sans-serif;
+    font-family: var(--font-default), system-ui, sans-serif;
   }
 }
 
 @layer components {
   .page-content {
     @apply container max-w-screen-xl mx-auto p-4 bg-primary;
+  }
+
+  .menu {
+    @apply font-subheading;
+  }
+
+  .btn-primary {
+    @apply font-subheading font-normal bg-accent text-accent-content hover:bg-neutral hover:text-neutral-content;
   }
 }

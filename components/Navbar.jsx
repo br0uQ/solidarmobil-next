@@ -12,7 +12,7 @@ export default function Navbar() {
           </summary>
           <NavbarItems className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow" />
         </details>
-        <a className="btn btn-ghost text-xl">SolidarMobil e.V.</a>
+        <a className="btn btn-ghost text-xl font-heading">SolidarMobil e.V.</a>
       </div>
 
       <div className="navbar-center hidden lg:flex">

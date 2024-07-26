@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <div>
       <Titlebar
-        heading="Gemeinsam mobil machen"
-        subheading="Der SolidarMobil e.V. macht Fahrzeug-Sharing im Raum Hersbruck und Umgebung möglich."
+        heading="Fahrzeug-Sharing im Raum Hersbruck"
+        subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co."
       />
 
       <div className="page-content">
@@ -22,7 +22,7 @@ export default function Home() {
           takimata sanctus est Lorem ipsum dolor sit amet.
         </p>
 
-        <a className="btn bg-accent text-accent-content m-4">Button</a>
+        <a className="btn btn-primary m-4">Button</a>
       </div>
     </div>
   );

@@ -12,10 +12,10 @@ export default function Titlebar(props) {
         backgroundImage: `url(${imgHero.src})`,
       }}
     >
-      <div className="hero-overlay bg-opacity-70"></div>
+      <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-heading">
+          <h1 className="mb-5 text-5xl font-heading font-medium">
             {props.heading || defHeading}
           </h1>
           <p className="mb-5 font-subheading italic text-3xl">
