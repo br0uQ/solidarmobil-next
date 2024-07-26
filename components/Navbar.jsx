@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-100 text-base-content z-10 fixed top-0 w-full">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl font-heading">SolidarMobil e.V.</a>
+        <Link href="/" className="btn btn-ghost text-xl font-heading">SolidarMobil e.V.</Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">

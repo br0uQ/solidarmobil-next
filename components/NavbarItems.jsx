@@ -1,30 +1,29 @@
 import Link from "next/link";
-import { FaBars } from "react-icons/fa";
 
 export default function NavbarItems({ className, tabIndex }) {
   return (
     <ul tabIndex={tabIndex} className={className}>
       <li>
-        <a>Über uns</a>
+        <Link href="/ueber_uns">Über uns</Link>
       </li>
       <li>
-        <a>HowTo</a>
+        <Link href="">HowTo</Link>
       </li>
       <li>
         <details>
           <summary>Aktuelles</summary>
           <ul className="p-2">
             <li>
-              <a>Submenu 1</a>
+              <Link href="">Submenu 1</Link>
             </li>
             <li>
-              <a>Submenu 2</a>
+              <Link href="">Submenu 2</Link>
             </li>
           </ul>
         </details>
       </li>
       <li>
-        <a>Unterstützen</a>
+        <Link href="">Unterstützen</Link>
       </li>
     </ul>
   );
