@@ -7,7 +7,7 @@ export default function Titlebar(props) {
 
   return (
     <div
-      className="hero min-h-screen mb-12"
+      className="hero min-h-screen"
       style={{
         backgroundImage: `url(${imgHero.src})`,
       }}

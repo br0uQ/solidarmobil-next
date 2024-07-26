@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "@/components/Footer";
 
 const nothing_you_could_do = Nothing_You_Could_Do({
   weight: "400",
@@ -74,6 +75,7 @@ export default function RootLayout({ children }) {
         <main className="bg-base-100 min-h-screen w-full text-base-content">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
