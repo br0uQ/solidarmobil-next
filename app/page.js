@@ -4,8 +4,10 @@ export default function Home() {
   return (
     <div>
       <Titlebar
-        heading="Fahrzeug-Sharing im Raum Hersbruck"
-        subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co."
+        heading="SolidarMobil"
+      /* heading="Fahrzeug-Sharing im Raum Hersbruck" */
+        subheading="Gemeinsam unterwegs, nachhaltig verbunden!"
+      /* subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co." */
       />
 
       <div className="page-content">

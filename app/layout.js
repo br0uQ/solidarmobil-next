@@ -1,13 +1,15 @@
 import {
   Caudex,
   Hammersmith_One,
+  Jua,
   Montserrat_Alternates,
   Nothing_You_Could_Do,
+  Pacifico,
   Palanquin,
   Work_Sans,
 } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const nothing_you_could_do = Nothing_You_Could_Do({
@@ -22,6 +24,20 @@ const caudex = Caudex({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-caudex",
+});
+
+const jua = Jua({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jua",
+});
+
+const pacifico = Pacifico({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-pacifico",
 });
 
 const palanquin = Palanquin({
@@ -65,6 +81,8 @@ export default function RootLayout({ children }) {
         className={`
             ${nothing_you_could_do.variable}
             ${caudex.variable}
+            ${jua.variable}
+            ${pacifico.variable}
             ${palanquin.variable}
             ${montserrat_alternates.variable}
             ${hammersmith_one.variable}

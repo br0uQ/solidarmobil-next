@@ -1,5 +1,7 @@
 "use client";
+import imgLogo from "../public/img/solidarmobil_logo.svg";
 
+import Image from "next/image";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
 import NavbarItems from "./NavbarItems";
@@ -7,8 +9,17 @@ import NavbarItems from "./NavbarItems";
 export default function Navbar() {
   return (
     <div className="navbar bg-base-100 text-base-content z-10 fixed top-0 w-full">
+      <div class="flex flex-shrink-0 items-center"></div>
       <div className="navbar-start">
-        <Link href="/" className="btn btn-ghost text-xl font-heading">SolidarMobil e.V.</Link>
+        <Link href="/" className="btn btn-ghost text-xl font-heading">
+          <Image
+            className="size-64 h-8 w-auto"
+            priority
+            src={imgLogo}
+            alt="SolidarMobil-Logo"
+          />
+          <div className="hidden lg:flex">SolidarMobil e.V.</div>
+        </Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">
