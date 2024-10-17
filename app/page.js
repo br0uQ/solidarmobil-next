@@ -6,7 +6,7 @@ export default function Home() {
       <Titlebar
         heading="Statt kaufen: PKWs teilen!"
         /* heading="Fahrzeug-Sharing im Raum Hersbruck" */
-        subheading="Der Hersbrucker Car-Sharing-Verein 'SolidarMOBIL' nimmt Gestalt an."
+        subheading="Der Hersbrucker Car-Sharing-Verein &quot;SolidarMOBIL&quot; nimmt Gestalt an."
         /* subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co." */
       />
       <div className="page-content hidden md:max-w-screen-xl"></div>
@@ -16,7 +16,7 @@ export default function Home() {
           und Umgebung aus:
         </h1>
         <p>
-          Braucht man ein Auto, nimmt man mit "SolidarMOBIL" Kontakt auf. Zu
+          Braucht man ein Auto, nimmt man mit &quot;SolidarMOBIL&quot; Kontakt auf. Zu
           einem genau ermittelten Tarif, der gerade die Kosten deckt, kann man
           dann einen vereinseigenen PKW nutzen. Um Kundendienst, Versicherung,
           Tanken etc. muss man sich nicht kümmern. Das ist – wenn man nicht
@@ -44,7 +44,7 @@ export default function Home() {
           nur Kraftfahrzeuge sinnvoll und sparsam zum Einsatz kommen. Auch der
           Austausch von Fahrrädern, vor allem von elektrischen, sowie die
           gemeinsame Nutzung geeigneter Fahrkarten für den öffentlichen
-          Nahverkehr werden angestrebt.{" "}
+          Nahverkehr werden angestrebt.
         </p>
       </div>
 
