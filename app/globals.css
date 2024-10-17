@@ -7,13 +7,13 @@
     font-family: var(--font-default), system-ui, sans-serif;
   }
   h1 {
-      @apply font-heading font-bold mb-5
+      @apply font-heading font-bold mb-5 text-xl
   }
 }
 
 @layer components {
   .page-content {
-    @apply container max-w-screen-xl my-12 mx-auto p-8 bg-secondary text-secondary-content text-lg lg:rounded-md ;
+    @apply container my-4 lg:max-w-screen-xl mx-auto p-8 bg-secondary text-secondary-content text-lg lg:rounded-md ;
   }
 
   .menu {
