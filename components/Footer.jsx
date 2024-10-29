@@ -13,6 +13,9 @@ export default function Footer() {
       <Link href="/impressum" className="link link-hover">
         Impressum
       </Link>
+      <Link href="/doc/Satzungsentwurf.pdf" className="link link-hover">
+        Satzungsentwurf
+      </Link>
     </footer>
   );
 }
