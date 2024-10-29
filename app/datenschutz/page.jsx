@@ -1,11 +1,8 @@
 export default function Datenschutz() {
   return (
-    <div>
-      {/*
-      <PageHeading heading="Datenschutzhinweise" subheading="" />
-      */}
-
+    <div className="page-content">
       <main>
+        <h1 className="text-3xl justify-cente text-center">Impressum</h1>
         <div className="page-content">
           <section>
             <h1>1. Einleitung</h1>

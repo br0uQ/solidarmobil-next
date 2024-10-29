@@ -90,7 +90,7 @@ export default function RootLayout({ children }) {
         `}
       >
         <Navbar />
-        <main className="bg-base-100 min-h-screen w-full text-base-content">
+        <main className="bg-base-100 min-h-screen w-full text-base-content pt-14">
           {children}
         </main>
         <Footer />
