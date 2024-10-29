@@ -69,7 +69,7 @@ const work_sans = Work_Sans({
 });
 
 export const metadata = {
-  title: "SolidarMobil e.V.",
+  title: "SolidarMobil",
   description:
     "Als Gemeinnütziger Verein wollen wir die Mobilität auf dem Land (v.a. Hersbrucker Umland) voranbringen.",
 };
