@@ -3,9 +3,12 @@ import Link from "next/link";
 export default function NavbarItems({ className, tabIndex }) {
   return (
     <ul tabIndex={tabIndex} className={className}>
+      {/* Umfrage
       <li>
-        <Link href="/ueber_uns">Über uns</Link>
+        <Link href="https://nextcloud.cloudwolke.top/apps/forms/s/g4aJAGbbneQiXF2XDKPTCMyK">Umfrage</Link>
       </li>
+          */}
+      {/*
       <li>
         <Link href="">HowTo</Link>
       </li>
@@ -25,6 +28,7 @@ export default function NavbarItems({ className, tabIndex }) {
       <li>
         <Link href="">Unterstützen</Link>
       </li>
+          */}
     </ul>
   );
 }

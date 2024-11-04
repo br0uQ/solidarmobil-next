@@ -42,6 +42,22 @@ module.exports = {
           neutral: "#269d4d",
           accent: "#578ac2",
         },
+        light_blue_green: {
+          /** #011b28: dark green **/
+          /** #1b8284: darker teal **/
+          /** #84c257: light green **/
+          /** #eef1f5: almost white **/
+          primary: "#1b8284",
+          "primary-content": "#84c257",
+          secondary: "#84c257",
+          "secondary-content": "#011b28",
+          neutral: "#011b28",
+          "neutral-content": "#84c257",
+          accent: "#eef1f5",
+          "accent-content": "#011b28",
+          "base-100": "#ffffff",
+          "base-content": "#84c257",
+        },
         dark_blue_green: {
           /** #011b28: dark green **/
           /** #1b8284: darker teal **/

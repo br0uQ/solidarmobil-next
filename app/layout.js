@@ -76,7 +76,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-theme="dark_blue_green" lang="de">
+    <html data-theme="light_blue_green" lang="de">
       <body
         className={`
             ${nothing_you_could_do.variable}

@@ -8,7 +8,7 @@ import NavbarItems from "./NavbarItems";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-base-100 text-base-content z-10 fixed top-0 w-full">
+    <div className="navbar bg-neutral text-base-content z-10 fixed top-0 w-full">
       <div className="navbar-start">
         {/*
         <Link href="/" className="btn btn-ghost text-xl font-heading">
@@ -27,9 +27,7 @@ export default function Navbar() {
         <Link href="/" className="btn btn-ghost text-xl font-heading">
           SolidarMOBIL
         </Link>
-        {/*
         <NavbarItems className="menu menu-horizontal px-1" />
-      */}
       </div>
 
       <div className="navbar-end">
