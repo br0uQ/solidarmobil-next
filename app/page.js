@@ -11,7 +11,7 @@ export default function Home() {
         subheading="Mach mit bei der Car-Sharing-Initiative „SolidarMOBIL“ in und um Hersbruck!"
         /* subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co." */
       />
-      <div className="hero-content flex-col-reverse lg:flex-row-reverse py-12 px-16">
+      <div className="flex flex-col-reverse lg:flex-row-reverse py-12 px-16">
         <Image
           src={imgCarPhone}
           className="max-w-sm rounded-lg aspect-video object-center object-cover"
