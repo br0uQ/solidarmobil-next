@@ -1,6 +1,7 @@
 import Titlebar from "@/components/Titlebar";
 import Image from "next/image";
 import imgCarPhone from "/public/img/hero_smartphone_car.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,13 +12,13 @@ export default function Home() {
         subheading="Mach mit bei der Car-Sharing-Initiative „SolidarMOBIL“ in und um Hersbruck!"
         /* subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co." */
       />
-      <div className="flex flex-col-reverse lg:flex-row-reverse py-12 px-16">
+      <div className="flex flex-col-reverse lg:flex-row-reverse ">
         <Image
           src={imgCarPhone}
-          className="max-w-sm rounded-lg aspect-video object-center object-cover"
+          className="max-w-sm rounded-lg aspect-video object-center object-cover mb-12 md:my-12 md:mx-16"
           alt="Picture of a car that has solidarMOBIL written on it"
         />
-        <div className="bg-base-100 text-black">
+        <div className="bg-base-100 text-black page-element">
           <h1 className="">Zielvorstellung</h1>
           <p>
             In einer Gruppe aktiver Leute aus Hersbruck und Umgebung bringen
@@ -36,7 +37,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-base-200 text-black py-12 px-16">
+      <div className="bg-secondary text-black page-element md:flex">
+        <p className="mb-6">
+          Um Bedarf und Interesse an einem Carsharing festzustellen, sowie auch
+          um besser planen zu können wie dieses Carsharing gestaltet sein soll,
+          haben wir eine Umfrage laufen.
+        </p>
+        <Link href="/umfrage">
+          <button className="btn btn-primary m-4">
+            Umfrage
+          </button>
+        </Link>
+      </div>
+
+      <div className="bg-base-200 text-black page-element">
         <h1 className="">Entstehung</h1>
         <p>
           Nach einem informativen Abend über einen selbstorganisierten
@@ -50,8 +64,8 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="bg-base-100 text-black px-16 md:flex">
-        <div className="pt-12 md:pr-8">
+      <div className="bg-base-100 text-black px-6 md:px-16 md:flex">
+        <div className="pt-6 md:pt-12 md:pr-8">
           <h1 className="">Wie geht es weiter?</h1>
           <p>
             Voraussetzung, um das Ziel zu erreichen, ist eine Vereinsgründung
@@ -62,7 +76,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="py-12 md:pl-8">
+        <div className="py-6 md:py-12 md:pl-8">
           <h1 className="">Nicht nur Autos teilen</h1>
           <p>
             Die Initiator/innen denken auch schon weiter: Es sollen nicht nur
@@ -74,7 +88,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-base-200 text-black py-12 px-16">
+      <div className="bg-base-200 text-black page-element">
         <h1 className="text-center">Einladung zur Infoveranstaltung</h1>
         <p>
           Am Mittwoch, 13. November 2024, findet um 19:15 Uhr in den Räumen des
