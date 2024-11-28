@@ -44,9 +44,7 @@ export default function Home() {
           haben wir eine Umfrage laufen.
         </p>
         <Link href="/umfrage">
-          <button className="btn btn-primary m-4">
-            Umfrage
-          </button>
+          <button className="btn btn-primary m-4">Umfrage</button>
         </Link>
       </div>
 
@@ -88,6 +86,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/*
       <div className="bg-base-200 text-black page-element">
         <h1 className="text-center">Einladung zur Infoveranstaltung</h1>
         <p>
@@ -110,9 +109,34 @@ export default function Home() {
           Vereinsgründung erfolgen – und dann kann’s richtig losgehen!
         </p>
       </div>
-      {/*
-        <a className="btn btn-primary m-4">Button</a>
       */}
+
+      <div className="bg-base-200 text-black page-element">
+        <h1 className="text-center">
+          Wir freuen uns zur Gründungsversammlung des Vereins einzuladen
+        </h1>
+
+        <p>
+          Diese Einladung richtet sich an alle Menschen, die sich dieser Chance
+          des „etwas anderen Umgangs“ mit Mobilität anschließen möchten,
+          unabhängig davon, ob sie sich eine aktive oder eher eine passive
+          Mitwirkung beim Car-Sharing vorstellen können.
+        </p>
+
+        <p className="pt-4">
+          <strong>Wann:</strong> 15. Januar 2025 um 19:30 Uhr
+        </p>
+
+        <p className="pt-4">
+          <strong>Wo:</strong> Kulturbahnhof Hersbruck e.V. am Hersbrucker
+          Bahnhof r. d. P. (Bahngelände 2, 91217 Hersbruck)
+        </p>
+
+        <p className="pt-4">
+          Wir freuen uns auf dein Kommen und darauf, gemeinsam einen neuen
+          Verein ins Leben zu rufen!
+        </p>
+      </div>
     </div>
   );
 }
