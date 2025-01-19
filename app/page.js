@@ -1,141 +1,122 @@
-import Titlebar from "@/components/Titlebar";
-import Image from "next/image";
-import imgCarPhone from "/public/img/hero_smartphone_car.jpg";
 import Link from "next/link";
+import imgHero from "../public/img/SolidarMobil_hands_transparent.png";
+import imgHelping from "/public/img/undraw/011b28/undraw_fatherhood_eldm.svg";
+import imgFriends from "/public/img/undraw/011b28/undraw_coffee-with-friends_ocg2.svg";
+import imgJoin from "/public/img/undraw/011b28/undraw_join_6quk.svg";
+import imgCarsharing from "/public/img/undraw/011b28/undraw_order-a-car_x5mq.svg";
+import { FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div>
-      <Titlebar
-        heading="AUTOS TEILEN STATT BESITZEN"
-        /* heading="Fahrzeug-Sharing im Raum Hersbruck" */
-        subheading="Mach mit bei der Car-Sharing-Initiative „SolidarMOBIL“ in und um Hersbruck!"
-        /* subheading="Wir ermöglichen und unterstützen das Teilen von Autos, Lastenrädern, Mobicards & Co." */
-      />
+      <div className="hero bg-neutral text-secondary md:py-28 md:px-12 pb-6">
+        <div className="hero-content flex-col flex-col-reverse lg:flex-row-reverse">
+          <img
+            src={imgHero.src}
+            className="md:max-w-md rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 className="text-5xl font-bold">
+              SolidarMobil – Gemeinsam für eine nachhaltige Mobilität!
+            </h1>
+            <p className="py-6">
+              In einer Welt, in der umweltfreundliche Lösungen immer wichtiger
+              werden, setzen wir von SolidarMobil auf die Kraft der
+              Gemeinschaft. Unser Carsharing-Verein im oberen und mittleren
+              Pegnitztal bietet dir die Möglichkeit, Mobilität neu zu denken:
+              nachhaltig, kosteneffizient und solidarisch.
+            </p>
+            {/*
+            <button className="btn btn-primary">Mitglied werden</button>
+          */}
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col-reverse lg:flex-row-reverse ">
-        <Image
-          src={imgCarPhone}
-          className="max-w-sm rounded-lg aspect-video object-center object-cover mb-12 md:my-12 md:mx-16"
-          alt="Picture of a car that has solidarMOBIL written on it"
+        <img
+          src={imgCarsharing.src}
+          className="md:max-w-md shadow-2xl max-w-sm rounded-lg mb-12 md:my-12 md:mx-16"
+          alt=""
         />
         <div className="bg-base-100 text-black page-element">
-          <h1 className="">Zielvorstellung</h1>
+          <h1 className="">Willkommen bei SolidarMobil!</h1>
           <p>
-            In einer Gruppe aktiver Leute aus Hersbruck und Umgebung bringen
-            sich Menschen aus unterschiedlichsten Gründen in die Initiative ein.
-            Die Zielvorstellung sieht für alle so aus: Braucht man ein Auto,
-            nimmt man mit &quot;SolidarMobil&quot; Kontakt auf. Zu einem genau
-            ermittelten Tarif, der gerade die Kosten deckt, kann man dann einen
-            vereinseigenen PKW nutzen. Um Kundendienst, Versicherung,
-            Reparaturen, Tankstellenbesuche etc. muss man sich nicht kümmern.
-            Das ist tatsächlich günstiger, als ein Auto privat zu halten, denn
-            die Basiskosten werden ja geteilt. Und der überlegte, sparsame
-            Einsatz von Kraftfahrzeugen steht natürlich, im Einklang mit einem
-            verantwortlichen Umgang mit der Umwelt, im Satzungsentwurf des
-            Vereins &quot;SolidarMobil&quot;.
+            Wir freuen uns, Dir unseren neu gegründeten Carsharing-Verein
+            SolidarMobil vorzustellen! Obwohl wir derzeit noch keine eigenen
+            Vereinsautos zum Verleihen besitzen, haben wir uns zum Ziel gesetzt,
+            eine zentrale Anlaufstelle für alle Interessierten in der Umgebung
+            zu schaffen. Bei uns findest Du eine Plattform, um gelegentlich ein
+            Auto oder Fahrrad/Lastenrad auszuleihen oder anderen die Möglichkeit
+            zu bieten, Dein Fahrzeug zu nutzen.
           </p>
         </div>
       </div>
 
-      <div className="bg-secondary text-black page-element md:flex">
-        <p className="mb-6">
-          Um Bedarf und Interesse an einem Carsharing festzustellen, sowie auch
-          um besser planen zu können wie dieses Carsharing gestaltet sein soll,
-          haben wir eine Umfrage laufen.
-        </p>
-        <Link href="/umfrage">
-          <button className="btn btn-primary m-4">Umfrage</button>
-        </Link>
-      </div>
-
-      <div className="bg-base-200 text-black page-element">
-        <h1 className="">Entstehung</h1>
-        <p>
-          Nach einem informativen Abend über einen selbstorganisierten
-          Car-Sharing-Verein aus dem Wendland (die HZ berichtete), hat sich die
-          Initiativgruppe aus unserer Region gebildet. Viel Energie wurde schon
-          investiert, um (vereins-)rechtliche und (versicherungs-)technische
-          Probleme zu klären. Es gibt zwar in dieser Hinsicht bereits Vorbilder
-          in anderen Kommunen, doch noch immer ist das Vorhaben abseits von
-          Großstädten nichts Alltägliches. Alles muss gewissenhaft durchdacht,
-          kalkuliert und abgesichert werden.
-        </p>
-      </div>
-
-      <div className="bg-base-100 text-black px-6 md:px-16 md:flex">
-        <div className="pt-6 md:pt-12 md:pr-8">
-          <h1 className="">Wie geht es weiter?</h1>
+      <div className="flex flex-col-reverse lg:flex-row ">
+        <img
+          src={imgFriends.src}
+          className="md:max-w-md shadow-2xl max-w-sm rounded-lg mb-12 md:my-12 md:mx-16"
+          alt=""
+        />
+        <div className="bg-base-100 text-black page-element">
+          <h1 className="">Gemeinsam für nachhaltige Mobilität</h1>
           <p>
-            Voraussetzung, um das Ziel zu erreichen, ist eine Vereinsgründung
-            mit einer ausreichend großen Anzahl an Mitgliedern. Nur dann ist es
-            möglich, zwei oder mehr Fahrzeuge zum Beispiel mittels
-            Überlassungsverträgen zu beschaffen, sie zu betreuen und zu
-            betreiben.
+            SolidarMobil ist mehr als nur ein Carsharing-Dienst – wir sind eine
+            Gemeinschaft, die sich für nachhaltige Mobilität und den Austausch
+            von Ressourcen einsetzt. Wir möchten Dir helfen, die Vorteile des
+            Carsharings zu entdecken und gleichzeitig einen Beitrag zum
+            Umweltschutz zu leisten.
           </p>
-        </div>
-
-        <div className="py-6 md:py-12 md:pl-8">
-          <h1 className="">Nicht nur Autos teilen</h1>
-          <p>
-            Die Initiator/innen denken auch schon weiter: Es sollen nicht nur
-            Kraftfahrzeuge sinnvoll und sparsam zum Einsatz kommen. Auch der
-            Austausch von Fahrrädern, vor allem von elektrischen, sowie die
-            gemeinsame Nutzung geeigneter Fahrkarten für den öffentlichen
-            Nahverkehr werden angestrebt.
-          </p>
+          <Link href="/ueber_uns" className="btn btn-primary mt-5">
+            Mehr über uns
+          </Link>
         </div>
       </div>
 
-      {/*
-      <div className="bg-base-200 text-black page-element">
-        <h1 className="text-center">Einladung zur Infoveranstaltung</h1>
-        <p>
-          Am Mittwoch, 13. November 2024, findet um 19:15 Uhr in den Räumen des
-          Kulturbahnhof Hersbruck e.V. am Hersbrucker Bahnhof r. d. P. ein
-          Treffen für alle Interessierten statt. Der Satzungsentwurf, die
-          bisherigen Konzepte und Kalkulationen sowie Ideen zur Kommunikation
-          usw. werden vorgestellt und stehen zur Diskussion.
-        </p>
-
-        <p className="pt-4">
-          Eingeladen hierzu sind alle Menschen, die sich zu dieser Chance des
-          „etwas anderen Umgangs“ mit Mobilität gründlich informieren möchten,
-          unabhängig davon, ob sie sich eine aktive oder eher eine passive
-          Mitwirkung beim Car-Sharing vorstellen können.
-        </p>
-
-        <p className="pt-4">
-          Bei ausreichender Resonanz soll dann im Januar 2025 die
-          Vereinsgründung erfolgen – und dann kann’s richtig losgehen!
-        </p>
+      <div className="flex flex-col-reverse lg:flex-row-reverse ">
+        <img
+          src={imgHelping.src}
+          className="md:max-w-md shadow-2xl max-w-sm rounded-lg mb-12 md:my-12 md:mx-16"
+          alt=""
+        />
+        <div className="bg-base-100 text-black page-element">
+          <h1 className="">Unterstützung und Beratung</h1>
+          <p>
+            Darüber hinaus stehen wir Dir mit Rat und Tat zur Seite, wenn es um
+            rechtliche Fragen und Versicherungen geht. Unser Ziel ist es, Dir
+            den Einstieg in die Welt des Carsharings zu erleichtern und Dir alle
+            notwendigen Informationen zur Verfügung zu stellen, damit Du sicher
+            und sorgenfrei fahren kannst. Zudem haben wir ein Wiki eingerichtet,
+            in dem wir alle wichtigen Informationen bereitstellen wollen, damit
+            Du jederzeit auf das benötigte Know-How zugreifen kannst.
+          </p>
+          <Link href="/wiki" className="btn btn-primary mt-5">
+            Zum Wiki
+          </Link>
+        </div>
       </div>
-      */}
 
-      <div className="bg-base-200 text-black page-element">
-        <h1 className="text-center">
-          Wir freuen uns zur Gründungsversammlung des Vereins einzuladen
-        </h1>
-
-        <p>
-          Diese Einladung richtet sich an alle Menschen, die sich dieser Chance
-          des „etwas anderen Umgangs“ mit Mobilität anschließen möchten,
-          unabhängig davon, ob sie sich eine aktive oder eher eine passive
-          Mitwirkung beim Car-Sharing vorstellen können.
-        </p>
-
-        <p className="pt-4">
-          <strong>Wann:</strong> 15. Januar 2025 um 19:30 Uhr
-        </p>
-
-        <p className="pt-4">
-          <strong>Wo:</strong> Kulturbahnhof Hersbruck e.V. am Hersbrucker
-          Bahnhof r. d. P. (Bahngelände 2, 91217 Hersbruck)
-        </p>
-
-        <p className="pt-4">
-          Wir freuen uns auf dein Kommen und darauf, gemeinsam einen neuen
-          Verein ins Leben zu rufen!
-        </p>
+      <div className="flex flex-col-reverse lg:flex-row ">
+        <img
+          src={imgJoin.src}
+          className="md:max-w-md shadow-2xl max-w-sm rounded-lg mb-12 md:my-12 md:mx-16"
+          alt=""
+        />
+        <div className="bg-base-100 text-black page-element">
+          <h1 className="">Werde Teil unserer Zukunft</h1>
+          <p>
+            Gemeinsam arbeiten wir daran, mittelfristig eine eigene Flotte von
+            Fahrzeugen aufzubauen, um Dir noch mehr Möglichkeiten zu bieten.
+            Werde Teil unserer Gemeinschaft und gestalte mit uns die Zukunft der
+            Mobilität!
+          </p>
+          <p>Schreibe einfach unter:</p>
+          <p className="flex">
+            <FaEnvelope className="me-3" />
+            <a className="link-info" href="mailto:{data.EMAIL_ADDR}">info@solidarmobil.de</a>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -7,20 +7,23 @@
     font-family: var(--font-default), system-ui, sans-serif;
   }
   h1 {
-      @apply font-heading font-bold mb-5 text-3xl
+    @apply font-heading font-bold mb-5 text-3xl;
   }
   p {
-      @apply text-lg
+    @apply text-lg font-default pb-2;
+  }
+  ul {
+    @apply list-disc list-inside pl-12;
   }
 }
 
 @layer components {
   .page-content {
-    @apply container my-4 lg:max-w-screen-xl mx-auto p-8 bg-secondary text-secondary-content text-lg lg:rounded-md ;
+    @apply container my-4 lg:max-w-screen-xl mx-auto p-8 bg-secondary text-secondary-content text-lg lg:rounded-md;
   }
 
   .page-element {
-    @apply py-6 px-6 md:py-12 md:px-16;
+    @apply py-6 px-6 md:py-12 md:px-12;
   }
 
   .menu {
@@ -28,6 +31,10 @@
   }
 
   .btn-primary {
-    @apply font-subheading font-normal bg-accent text-accent-content hover:bg-neutral hover:text-neutral-content;
+    @apply font-heading font-bold text-xl bg-accent text-accent-content hover:bg-neutral hover:text-neutral-content;
+  }
+
+  .footer {
+    @apply font-default;
   }
 }

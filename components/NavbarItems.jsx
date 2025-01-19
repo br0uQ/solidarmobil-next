@@ -4,7 +4,10 @@ export default function NavbarItems({ className, tabIndex }) {
   return (
     <ul tabIndex={tabIndex} className={className}>
       <li>
-        <Link href="/umfrage">Umfrage</Link>
+        <Link href="/ueber_uns">Über uns</Link>
+      </li>
+      <li>
+        <Link href="/wiki">Wiki</Link>
       </li>
       {/*
       <li>

@@ -7,14 +7,17 @@ export default function Footer() {
         <Link href="/kontakt" className="link link-hover">Kontakt</Link>
         <a href={"./satzung.pdf"} className="link link-hover">Satzung</a>
       */}
+      <Link href="/doc/Satzungsentwurf.pdf" className="link link-hover">
+        Satzung
+      </Link>
+      <Link href="/doc/Beitragsordnung_15_01_25.pdf" className="link link-hover">
+        Beitragsordnung
+      </Link>
       <Link href="/datenschutz" className="link link-hover">
         Datenschutzhinweise
       </Link>
       <Link href="/impressum" className="link link-hover">
         Impressum
-      </Link>
-      <Link href="/doc/Satzungsentwurf.pdf" className="link link-hover">
-        Satzungsentwurf
       </Link>
     </footer>
   );
