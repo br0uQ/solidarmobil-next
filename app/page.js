@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import imgHero from "../public/img/SolidarMobil_hands_transparent.png";
 import imgHelping from "/public/img/undraw/011b28/undraw_fatherhood_eldm.svg";
