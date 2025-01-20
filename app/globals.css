@@ -37,4 +37,8 @@
   .footer {
     @apply font-default;
   }
+
+  .link {
+    @apply underline;
+  }
 }

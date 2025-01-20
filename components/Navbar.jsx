@@ -8,7 +8,7 @@ import NavbarItems from "./NavbarItems";
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-neutral text-base-content z-10 fixed top-0 w-full">
+    <div className="navbar bg-neutral text-base-content z-10 fixed top-0">
       <div className="navbar-start">
         {/*
         <Link href="/" className="btn btn-ghost text-xl font-heading">
