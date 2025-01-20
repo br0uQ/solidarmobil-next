@@ -1,6 +1,11 @@
 export default function Datenschutz() {
   return (
     <div>
+      <Head>
+        <title>
+          Datenschutzhinweise
+        </title>
+      </Head>
       <div className="hero bg-neutral text-secondary md:py-12 md:px-12 pb-6">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
           <div>

@@ -1,8 +1,18 @@
 import imgAbout from "/public/img/undraw/011b28/undraw_team_85hs.svg";
+import Head from "next/head";
 
 export default function UeberUns() {
   return (
-    <main>
+    <div>
+      <Head>
+        <title>Über uns</title>
+        <meta
+          name="description"
+          content="In einer Gruppe aktiver Leute aus Hersbruck und Umgebung bringen
+            sich Menschen aus unterschiedlichsten Gründen in den Verein ein."
+          key="desc"
+        />
+      </Head>
       <div className="hero bg-neutral text-secondary md:py-12 md:px-12 pb-6">
         <div className="hero-content flex-col-reverse lg:flex-row-reverse">
           <div>
@@ -55,6 +65,6 @@ export default function UeberUns() {
           erfolgreich mit 17 Gründungsmitgliedern gegründet.
         </p>
       </div>
-    </main>
+    </div>
   );
 }

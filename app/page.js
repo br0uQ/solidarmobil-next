@@ -9,6 +9,18 @@ import { FaEnvelope } from "react-icons/fa";
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>
+          SolidarMobil - Teilen von Autos, Fahr- und Lastenrad, etc.
+        </title>
+        <meta
+          name="description"
+          content="Unser Carsharing-Verein im oberen und mittleren Pegnitztal
+                   bietet dir die Möglichkeit, Mobilität neu zu denken:
+                   nachhaltig, kosteneffizient und solidarisch."
+          key="desc"
+        />
+      </Head>
       <div className="hero bg-neutral text-secondary md:py-28 md:px-12 pb-6">
         <div className="hero-content flex-col flex-col-reverse lg:flex-row-reverse">
           <img
@@ -114,7 +126,9 @@ export default function Home() {
           <p>Schreibe einfach unter:</p>
           <p className="flex">
             <FaEnvelope className="me-3" />
-            <a className="link-info" href="mailto:{data.EMAIL_ADDR}">info@solidarmobil.de</a>
+            <a className="link-info" href="mailto:{data.EMAIL_ADDR}">
+              info@solidarmobil.de
+            </a>
           </p>
         </div>
       </div>
